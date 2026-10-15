@@ -2155,3 +2155,14 @@ body {
   color: #E8B8AE !important;
   -webkit-text-fill-color: #E8B8AE !important;
 }
+
+
+/* Hero title: make the first word "SAFARI" ivory instead of near-black */
+.hero .hero-content h1 {
+  color: #FBF8F5 !important;
+  -webkit-text-fill-color: #FBF8F5 !important;
+}
+.hero .hero-content h1 > span {
+  color: #E8B8AE !important;
+  -webkit-text-fill-color: #E8B8AE !important;
+}
