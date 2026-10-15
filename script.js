@@ -64,6 +64,20 @@
   if (previousTestimonial) previousTestimonial.addEventListener('click', () => showTestimonial(testimonialIndex - 1));
   if (nextTestimonial) nextTestimonial.addEventListener('click', () => showTestimonial(testimonialIndex + 1));
 
+  const newsletterForm = document.getElementById('newsletter-form');
+  const newsletterNote = document.getElementById('newsletter-note');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const emailInput = document.getElementById('newsletter-email');
+      const email = emailInput ? emailInput.value.trim() : '';
+      const subject = encodeURIComponent('Inscription aux actualités Miaradi');
+      const body = encodeURIComponent('Bonjour Miaradi,\\n\\nJe souhaite recevoir des inspirations de voyage.\\nMon e-mail : ' + email);
+      if (newsletterNote) newsletterNote.textContent = 'Votre messagerie va s’ouvrir. Envoyez le message pour confirmer votre demande.';
+      window.location.href = 'mailto:rrazafindrafita@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  }
+
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
