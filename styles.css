@@ -62,3 +62,79 @@
  .brand-logo { width:clamp(140px,42vw,180px); max-height:52px; }
  .footer-brand .brand-logo { width:180px; max-height:65px; }
 }
+
+
+/* MIARADI redesign — section structure inspired by the supplied safari reference */
+:root{--ink:#171312;--ink-soft:#211a18;--paper:#FBF8F5;--yellow:#922D20;--yellow-deep:#762217;--white:#FBF8F5;--muted:#b7aaa4;--line:rgba(251,248,245,.16)}
+body{background:var(--ink);color:var(--white)}
+.topline{background:#922D20;color:#FBF8F5}
+.site-header{background:#FBF8F5;color:#211a18;border-bottom:1px solid rgba(23,19,18,.12)}
+.main-nav>a:not(.nav-cta):hover{color:#922D20}
+.nav-cta,.button-yellow,.tour-number,.tour-arrow{background:#922D20;color:#FBF8F5}
+.button-yellow:hover{background:#762217;color:#FBF8F5}
+.hero h1 span,.section-heading h2 em,.destination h2 em,.wildlife h2 em,.cta-content h2 em,.contact-section h2 em,.benefit-icon,.tour-meta,.tour-bottom b,.hero-counter strong,.hero-scroll span,.journal-category{color:#d6a29b}
+.eyebrow{color:#d6a29b}
+.wildlife,.destination,.contact-section{background:#922D20;color:#FBF8F5}
+.destination .eyebrow,.contact-section .eyebrow{color:#f0d8d2}
+.destination h2 em,.contact-section h2 em,.wildlife h2 em{color:#f8e8e3}
+.wildlife-copy .eyebrow{color:#f0d8d2}
+.wildlife li span{color:#f0d8d2}
+.destination-list>a{border-color:rgba(251,248,245,.28)}
+.dest-index,.dest-description{color:#f0d8d2}
+.dest-photo{box-shadow:0 14px 35px #35100c55}
+.tour-image{background-size:cover}
+.tour-card .tour-image{isolation:isolate}
+.tour-card .tour-image:before{content:"";position:absolute;inset:0;background:inherit;background-size:cover;background-position:center;z-index:-1;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.tour-card:hover .tour-image:before{transform:scale(1.07)}
+.animal-section{padding:95px 7.5% 100px}
+.animal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.animal-card{display:grid;grid-template-columns: minmax(140px,.82fr) 1fr;min-height:225px;background:#FBF8F5;color:#211a18;overflow:hidden}
+.animal-card img{width:100%;height:100%;min-height:225px;object-fit:cover;transition:transform .7s}
+.animal-card:hover img{transform:scale(1.045)}
+.animal-card>div{padding:24px 23px;align-self:center}
+.animal-card>div>span{font-size:8px;font-weight:700;letter-spacing:.13em;color:#922D20}
+.animal-card h3{font:500 28px/1.1 var(--display);margin:8px 0}
+.animal-card p{font-size:11px;line-height:1.75;color:#71645f;margin:0 0 16px}
+.animal-card a{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #e3d8d2;padding-top:10px;font-size:9px;text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.animal-card a b{font-size:16px;color:#922D20}
+.featured-trip{display:grid;grid-template-columns:1fr 1fr;min-height:440px;background:#922D20;color:#FBF8F5}
+.featured-copy{padding:65px clamp(35px,7.5vw,110px);align-self:center}
+.featured-copy .eyebrow{color:#f0d8d2}
+.featured-copy h2,.offices-panel h2{font:500 clamp(38px,4.7vw,62px)/1.04 var(--display);letter-spacing:-.025em;margin:0;text-transform:uppercase}
+.featured-copy h2 em,.offices-panel h2 em{font-style:normal;color:#f0d8d2}
+.featured-copy>p:not(.eyebrow){font-size:12px;line-height:1.9;max-width:440px;margin:22px 0}
+.featured-photo{min-height:400px;background:url('https://i.pinimg.com/1200x/e8/8b/93/e88b93ed052915fd778de66064371cd7.jpg') center/cover}
+.trip-facts{display:flex;flex-wrap:wrap;gap:10px 24px;margin:25px 0}
+.trip-facts span{font-size:10px;color:#f0d8d2}
+.trip-facts b{display:block;color:#FBF8F5;font-size:9px;text-transform:uppercase;letter-spacing:.1em}
+.featured-copy .button-dark{background:#FBF8F5;color:#922D20}
+.featured-copy .button-dark:hover{background:#f0d8d2}
+.testimonials{background:#922D20;color:#FBF8F5;padding:75px 7.5%;display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;align-items:center}
+.testimonial-title .eyebrow{color:#f0d8d2}
+.testimonial-title h2{font:500 clamp(35px,4.5vw,58px)/1.05 var(--display);margin:0}
+.testimonial-title h2 em{font-style:normal;color:#f0d8d2}
+.testimonial-controls{display:flex;gap:9px;margin-top:28px}
+.testimonial-controls button{width:42px;height:42px;border:1px solid #ffffff70;background:transparent;color:#FBF8F5;font-size:20px;cursor:pointer;transition:background .2s}
+.testimonial-controls button:hover{background:#762217}
+.testimonial-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.testimonial{padding:5px 0}
+.testimonial-person{display:flex;gap:10px;align-items:center}
+.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#FBF8F5;color:#922D20;font-size:11px;font-weight:700}
+.testimonial-person h3{font-size:11px;margin:0}
+.testimonial-person small{display:block;color:#f0d8d2;font-size:9px}
+.stars{color:#f3d5a8;letter-spacing:.12em;font-size:11px;margin:18px 0 10px}
+.testimonial blockquote{margin:0;color:#fff1ed;font-size:11px;line-height:1.9}
+.offices{position:relative;background:#100d0c;color:#FBF8F5;min-height:500px;display:grid;grid-template-columns:1fr 1fr}
+.offices-image{background:url('https://i.pinimg.com/1200x/53/9d/ae/539dae8e523c2ca5fb8d807de6aece96.jpg') center/cover;min-height:430px}
+.offices-panel{padding:60px clamp(30px,6vw,85px);align-self:center}
+.offices-panel .eyebrow{color:#d6a29b}
+.office-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:30px 0}
+.office-grid>div{border-top:1px solid var(--line);padding-top:14px}
+.office-icon{color:#d6a29b;font-size:20px}
+.office-grid h3{font-size:11px;margin:8px 0 5px}
+.office-grid p{font-size:10px;line-height:1.8;color:#b7aaa4;margin:0}
+.site-footer{background:#100d0c}
+.brand-logo{width:clamp(155px,17vw,230px);max-height:64px}
+.footer-brand .brand-logo{width:clamp(175px,18vw,245px);max-height:74px}
+@media(max-width:900px){.animal-section{padding:75px 5%}.animal-grid{gap:15px}.animal-card{grid-template-columns: .8fr 1fr}.animal-card>div{padding:17px}.testimonials{padding:65px 5%;grid-template-columns:1fr;gap:30px}.testimonial-track{gap:20px}.featured-copy{padding:55px 6%}.offices-panel{padding:45px 6%}}
+@media(max-width:650px){.animal-section{padding:65px 6%}.animal-grid{grid-template-columns:1fr;gap:16px}.animal-card{grid-template-columns:42% 1fr;min-height:190px}.animal-card img{min-height:190px}.animal-card>div{padding:15px}.animal-card h3{font-size:24px}.animal-card p{font-size:10px}.featured-trip{grid-template-columns:1fr}.featured-copy{padding:55px 6%}.featured-photo{min-height:280px;grid-row:1}.trip-facts{gap:10px 20px}.testimonials{padding:60px 6%}.testimonial-track{grid-template-columns:1fr;gap:25px}.testimonial:not(.is-current){display:none}.testimonial blockquote{font-size:12px}.offices{grid-template-columns:1fr}.offices-image{min-height:250px}.offices-panel{padding:48px 6%}.office-grid{gap:18px}.brand-logo{width:150px}.footer-brand .brand-logo{width:175px}}
