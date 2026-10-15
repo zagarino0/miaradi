@@ -4,3 +4,23 @@
 @media(min-width:1500px){.hero{height:720px}.hero-content{left:12%}.tours,.journal{padding-left:10%;padding-right:10%}.tour-image{height:360px}}
 @media(max-width:900px){.main-nav{gap:17px}.nav-cta{padding:12px}.benefits{grid-template-columns:repeat(2,1fr);padding:35px 6%}.tours,.journal{padding:75px 5%}.tour-grid{gap:14px}.tour-image{height:240px}.tour-card h3{font-size:25px}.destination,.contact-section{padding-left:6%;padding-right:6%}.wildlife-copy{padding:55px 7%}.site-footer{grid-template-columns:1fr 1fr}.copyright{justify-self:start}}
 @media(max-width:650px){.topline{height:30px;padding:0 5%;font-size:7px}.topline span:last-child{display:none}.site-header{height:72px;padding:0 5%}.brand-mark{width:35px;height:35px}.brand-name{font-size:18px}.menu-toggle{display:flex;flex-direction:column;gap:6px;padding:10px}.menu-toggle i{display:block;width:24px;height:2px;background:var(--yellow)}.main-nav{display:none;position:absolute;top:72px;left:0;right:0;padding:24px 5% 28px;background:#111110;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--line)}.main-nav.open{display:flex}.main-nav>a:not(.nav-cta){padding:13px 0;border-bottom:1px solid var(--line)}.nav-cta{margin-top:18px;text-align:center}.hero{height:690px;min-height:570px}.hero-content{left:6%;right:6%;top:45%}.hero h1{font-size:clamp(62px,16vw,94px)}.hero-copy{font-size:12px;max-width:340px}.hero-actions{gap:18px;flex-wrap:wrap}.hero-scroll{display:none}.hero-counter{right:6%;bottom:52px}.hero-caption{left:6%;font-size:7px}.benefits{gap:25px 17px;padding:32px 6%}.benefit{gap:10px}.benefit-icon{font-size:23px}.benefit h3{font-size:11px}.benefit p{font-size:10px}.section-heading{align-items:start;flex-direction:column;gap:18px}.section-heading h2,.destination h2,.wildlife h2,.cta-content h2,.contact-section h2{font-size:46px}.heading-note{max-width:380px}.tour-grid{grid-template-columns:1fr;gap:35px}.tour-image{height:310px}.tour-card h3{font-size:30px}.tour-card>p{font-size:12px}.tour-meta{font-size:8px}.section-foot{gap:15px}.wildlife{grid-template-columns:1fr}.wildlife-photo{min-height:310px}.wildlife-copy{padding:55px 7%}.destination{padding-top:70px;padding-bottom:75px}.destination-list>a{grid-template-columns:35px 1fr 28px;min-height:88px}.dest-name{font-size:26px}.dest-description{grid-column:2;grid-row:2;margin-top:-19px;font-size:10px;padding-bottom:13px}.dest-arrow{grid-column:3;grid-row:1/3}.dest-photo{display:none}.cta-banner{min-height:440px}.cta-content{padding:55px 6%}.journal-grid{grid-template-columns:1fr;gap:30px}.journal-image{height:240px}.journal article h3{font-size:27px}.contact-section{grid-template-columns:1fr;gap:35px;padding-top:70px;padding-bottom:70px}.contact-detail{margin-top:25px}.quote-form .button{width:100%}.site-footer{grid-template-columns:1fr;gap:15px;padding:30px 6%}.site-footer>p{margin:0}.footer-links{flex-wrap:wrap}.copyright{margin-top:8px}}
+
+
+/* Identité officielle Miaradi : rouge et ivoire */
+:root {
+  --ink: #171312;
+  --ink-soft: #211a18;
+  --paper: #FBF8F5;
+  --yellow: #922D20;
+  --yellow-deep: #762217;
+  --white: #FBF8F5;
+  --muted: #b7aaa4;
+  --line: rgba(251,248,245,.16);
+}
+.brand { display:inline-flex; align-items:center; flex:0 0 auto; min-width:0; }
+.brand-logo { display:block; width:clamp(150px,16vw,225px); height:auto; max-height:64px; object-fit:contain; object-position:left center; }
+.footer-brand .brand-logo { width:clamp(180px,18vw,260px); max-height:76px; }
+@media(max-width:650px) {
+  .brand-logo { width:clamp(140px,42vw,180px); max-height:52px; }
+  .footer-brand .brand-logo { width:180px; max-height:65px; }
+}
