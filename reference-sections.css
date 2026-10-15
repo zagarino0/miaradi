@@ -85,3 +85,62 @@
 .footer-bottom{color:#6F625D}
 .footer-column h3:after{background:#922D20}
 @media(max-width:600px){.reference-footer{background:#FBF8F5}}
+
+
+/* Footer layout correction: keep the footer sections in normal vertical flow */
+.reference-footer{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  padding:42px clamp(24px,7.5%,110px) 0;
+}
+.reference-footer *{box-sizing:border-box}
+.reference-footer .footer-contact{
+  display:grid;
+  grid-template-columns:minmax(180px,.75fr) minmax(0,2fr);
+  gap:36px;
+  align-items:center;
+  padding-bottom:30px;
+}
+.reference-footer .footer-contact-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(14px,2vw,30px);
+}
+.reference-footer .footer-contact-grid p{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+.reference-footer .footer-main{
+  display:grid;
+  grid-template-columns:minmax(220px,1.5fr) minmax(110px,.8fr) minmax(130px,.9fr) minmax(180px,1.1fr);
+  gap:clamp(22px,3vw,48px);
+  align-items:start;
+  padding:38px 0;
+}
+.reference-footer .footer-about,
+.reference-footer .footer-column,
+.reference-footer .footer-newsletter{min-width:0}
+.reference-footer .footer-brand{display:inline-flex;max-width:100%;align-items:center}
+.reference-footer .footer-brand .brand-logo{display:block;width:clamp(160px,15vw,220px);max-width:100%;height:auto;max-height:none}
+.reference-footer .footer-about>p{max-width:310px;margin:18px 0 0}
+.reference-footer .footer-column{gap:12px}
+.reference-footer .footer-column a{line-height:1.65}
+.reference-footer .footer-newsletter form{max-width:260px}
+.reference-footer .footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+@media(max-width:900px){
+  .reference-footer{padding:36px 5% 0}
+  .reference-footer .footer-contact{grid-template-columns:1fr;gap:22px}
+  .reference-footer .footer-main{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 28px}
+  .reference-footer .footer-about{grid-column:1/-1}
+  .reference-footer .footer-about>p{max-width:420px}
+  .reference-footer .footer-newsletter form{max-width:320px}
+}
+@media(max-width:600px){
+  .reference-footer{padding:30px 6% 0}
+  .reference-footer .footer-contact-grid{grid-template-columns:1fr;gap:17px}
+  .reference-footer .footer-main{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 18px;padding:30px 0}
+  .reference-footer .footer-about{grid-column:1/-1}
+  .reference-footer .footer-brand .brand-logo{width:180px}
+  .reference-footer .footer-bottom{align-items:flex-start;flex-direction:column;gap:10px}
+  .reference-footer .footer-bottom span:last-child{display:none}
+}
