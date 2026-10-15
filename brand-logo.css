@@ -1,0 +1,3 @@
+/* Palette and official MIARADI logo */
+:root{--ink:#171312;--ink-soft:#211a18;--paper:#FBF8F5;--yellow:#922D20;--yellow-deep:#762217;--white:#FBF8F5;--muted:#b7aaa4;--line:rgba(251,248,245,.16);}
+.brand{display:inline-flex;align-items:center;flex:0 0 auto;min-width:0}.brand-logo{display:block;width:clamp(150px,16vw,225px);height:auto;max-height:64px;object-fit:contain;object-position:left center;background:transparent}.footer-brand .brand-logo{width:clamp(180px,18vw,260px);max-height:76px}@media(max-width:650px){.brand-logo{width:clamp(140px,42vw,180px);max-height:52px}.footer-brand .brand-logo{width:180px;max-height:65px}}
