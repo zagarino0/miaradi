@@ -103,7 +103,7 @@ body{background:var(--ink);color:var(--white)}
 .featured-copy h2,.offices-panel h2{font:500 clamp(38px,4.7vw,62px)/1.04 var(--display);letter-spacing:-.025em;margin:0;text-transform:uppercase}
 .featured-copy h2 em,.offices-panel h2 em{font-style:normal;color:#f0d8d2}
 .featured-copy>p:not(.eyebrow){font-size:12px;line-height:1.9;max-width:440px;margin:22px 0}
-.featured-photo{min-height:400px;background:url('https://i.pinimg.com/1200x/e8/8b/93/e88b93ed052915fd778de66064371cd7.jpg') center/cover}
+.featured-photo{min-height:400px;background:url('https://i.pinimg.com/1200x/62/75/b5/6275b5524c84f37e491d8b9e3ff0929b.jpg') center/cover}
 .trip-facts{display:flex;flex-wrap:wrap;gap:10px 24px;margin:25px 0}
 .trip-facts span{font-size:10px;color:#f0d8d2}
 .trip-facts b{display:block;color:#FBF8F5;font-size:9px;text-transform:uppercase;letter-spacing:.1em}
