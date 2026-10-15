@@ -27,3 +27,38 @@
 
 /* Palette officielle : rouge Miaradi et ivoire clair */
 :root{--paper:#FBF8F5;--yellow:#922D20;--yellow-deep:#762217;--white:#FBF8F5;}
+
+/* Explicit brand palette: use red instead of the former yellow accent everywhere */
+:root {
+  --ink: #171312;
+  --ink-soft: #211a18;
+  --paper: #FBF8F5;
+  --yellow: #922D20;
+  --yellow-deep: #762217;
+  --white: #FBF8F5;
+  --muted: #b7aaa4;
+  --line: rgba(251,248,245,.16);
+}
+.button-yellow,
+.nav-cta,
+.tour-number,
+.tour-arrow { background-color: #922D20; color: #FBF8F5; }
+.hero h1 span,
+.section-heading h2 em,
+.destination h2 em,
+.wildlife h2 em,
+.cta-content h2 em,
+.contact-section h2 em,
+.benefit-icon,
+.tour-meta,
+.tour-bottom b,
+.hero-counter strong,
+.hero-scroll span,
+.journal-category { color: #922D20; }
+.button-yellow:hover { background-color: #762217; color: #FBF8F5; }
+.brand-logo { display:block; width:clamp(150px,16vw,225px); height:auto; max-height:64px; object-fit:contain; object-position:left center; background:transparent; }
+.footer-brand .brand-logo { width:clamp(180px,18vw,260px); max-height:76px; }
+@media(max-width:650px) {
+ .brand-logo { width:clamp(140px,42vw,180px); max-height:52px; }
+ .footer-brand .brand-logo { width:180px; max-height:65px; }
+}
