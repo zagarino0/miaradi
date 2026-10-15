@@ -24,3 +24,6 @@
   .brand-logo { width:clamp(140px,42vw,180px); max-height:52px; }
   .footer-brand .brand-logo { width:180px; max-height:65px; }
 }
+
+/* Palette officielle : rouge Miaradi et ivoire clair */
+:root{--paper:#FBF8F5;--yellow:#922D20;--yellow-deep:#762217;--white:#FBF8F5;}
