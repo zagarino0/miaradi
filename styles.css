@@ -2109,3 +2109,32 @@ body {
     color: #211714
   }
 }
+
+/* Contrast fix — contact / "Planifiez votre prochaine aventure" section */
+.contact-section,
+.contact-section.section-yellow {
+  color: #FBF8F5 !important;
+}
+.contact-section h2,
+.contact-section h2 strong,
+.contact-section h2 span {
+  color: #FBF8F5 !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.22);
+}
+.contact-section h2 em {
+  color: #E8B8AE !important;
+}
+.contact-section .eyebrow,
+.contact-section .eyebrow-line {
+  color: #F0D8D2 !important;
+  border-color: #F0D8D2 !important;
+}
+.contact-section > div > p:not(.eyebrow),
+.contact-section p:not(.eyebrow) {
+  color: #FBF8F5 !important;
+}
+.contact-section .button,
+.contact-section a.button,
+.contact-section .button-yellow {
+  color: #FBF8F5 !important;
+}
