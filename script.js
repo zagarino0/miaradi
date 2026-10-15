@@ -26,6 +26,14 @@
   }
 
   const circuitSelect = document.getElementById('circuit');
+  const requestedCircuit = new URLSearchParams(window.location.search).get('circuit');
+  if (circuitSelect && requestedCircuit) {
+    const matchingOption = Array.from(circuitSelect.options).find(option =>
+      option.value.trim().toLocaleLowerCase('fr') === requestedCircuit.trim().toLocaleLowerCase('fr') ||
+      option.textContent.trim().toLocaleLowerCase('fr') === requestedCircuit.trim().toLocaleLowerCase('fr')
+    );
+    if (matchingOption) circuitSelect.value = matchingOption.value || matchingOption.textContent.trim();
+  }
   document.querySelectorAll('[data-circuit]').forEach(card => {
     card.addEventListener('click', () => {
       if (circuitSelect) circuitSelect.value = card.dataset.circuit;
