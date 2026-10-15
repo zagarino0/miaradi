@@ -138,3 +138,30 @@ body{background:var(--ink);color:var(--white)}
 .footer-brand .brand-logo{width:clamp(175px,18vw,245px);max-height:74px}
 @media(max-width:900px){.animal-section{padding:75px 5%}.animal-grid{gap:15px}.animal-card{grid-template-columns: .8fr 1fr}.animal-card>div{padding:17px}.testimonials{padding:65px 5%;grid-template-columns:1fr;gap:30px}.testimonial-track{gap:20px}.featured-copy{padding:55px 6%}.offices-panel{padding:45px 6%}}
 @media(max-width:650px){.animal-section{padding:65px 6%}.animal-grid{grid-template-columns:1fr;gap:16px}.animal-card{grid-template-columns:42% 1fr;min-height:190px}.animal-card img{min-height:190px}.animal-card>div{padding:15px}.animal-card h3{font-size:24px}.animal-card p{font-size:10px}.featured-trip{grid-template-columns:1fr}.featured-copy{padding:55px 6%}.featured-photo{min-height:280px;grid-row:1}.trip-facts{gap:10px 20px}.testimonials{padding:60px 6%}.testimonial-track{grid-template-columns:1fr;gap:25px}.testimonial:not(.is-current){display:none}.testimonial blockquote{font-size:12px}.offices{grid-template-columns:1fr}.offices-image{min-height:250px}.offices-panel{padding:48px 6%}.office-grid{gap:18px}.brand-logo{width:150px}.footer-brand .brand-logo{width:175px}}
+
+
+/* MIARADI LIGHT THEME — ivory replaces dark section backgrounds */
+:root{--ink:#FBF8F5;--ink-soft:#F2EBE5;--paper:#FBF8F5;--white:#211714;--muted:#6F625D;--line:rgba(34,23,20,.16)}
+body{background:#FBF8F5;color:#211714}
+.site-header,.section-dark,.tours,.animal-section,.journal,.site-footer{background:#FBF8F5;color:#211714}
+.site-header{border-bottom-color:rgba(34,23,20,.16)}
+.brand-name small,.heading-note,.tour-card>p,.section-foot,.journal article>p:last-child,.site-footer>p{color:#6F625D}
+.brand-mark{color:#922D20;border-color:#922D20}
+.main-nav>a:not(.nav-cta){color:#211714}
+.main-nav>a:hover,.footer-links a:hover{color:#922D20}
+.nav-cta{background:#922D20;color:#FBF8F5}
+.menu-toggle i{background:#922D20}
+.benefits,.tour-bottom,.section-foot,.tour-steps,.tour-steps li{border-color:rgba(34,23,20,.16)}
+.benefit h3,.tour-card h3,.tour-bottom,.journal article h3{color:#211714}
+.benefit p,.tour-card>p,.tour-meta span:last-child,.journal article>p:last-child{color:#6F625D}
+.tour-meta,.tour-bottom b,.journal-category{color:#922D20}
+.tour-number,.tour-arrow{background:#922D20;color:#FBF8F5}
+.button-dark{background:#211714;color:#FBF8F5}
+.button-dark:hover{background:#922D20;color:#FBF8F5}
+.light-link{color:#211714}
+.animal-section .animal-card,.animal-card>div{background:#FBF8F5;color:#211714}
+.animal-card p,.animal-card>div>span{color:#6F625D}
+.animal-card a{color:#922D20}
+.site-footer{border-top:1px solid rgba(34,23,20,.16)}
+.copyright{color:#6F625D}
+@media(max-width:650px){.main-nav{background:#FBF8F5;color:#211714}.main-nav>a:not(.nav-cta){color:#211714}}
