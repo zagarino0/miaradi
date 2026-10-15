@@ -2138,3 +2138,20 @@ body {
 .contact-section .button-yellow {
   color: #FBF8F5 !important;
 }
+
+
+/* Final contrast override for the CTA banner title */
+.cta-banner .cta-content h2,
+.cta-banner .cta-content h2 *,
+.cta-banner .cta-content h2:not(em) {
+  color: #FBF8F5 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #FBF8F5 !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .4) !important;
+}
+.cta-banner .cta-content h2 em,
+.cta-banner .cta-content h2 em *,
+.cta-banner .cta-content h2 .accent {
+  color: #E8B8AE !important;
+  -webkit-text-fill-color: #E8B8AE !important;
+}
