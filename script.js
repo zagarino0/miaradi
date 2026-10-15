@@ -52,6 +52,18 @@
     });
   }
 
+  const testimonialCards = Array.from(document.querySelectorAll('.testimonial'));
+  let testimonialIndex = 0;
+  const showTestimonial = index => {
+    if (!testimonialCards.length) return;
+    testimonialIndex = (index + testimonialCards.length) % testimonialCards.length;
+    testimonialCards.forEach((card, i) => card.classList.toggle('is-current', i === testimonialIndex));
+  };
+  const previousTestimonial = document.getElementById('testimonial-prev');
+  const nextTestimonial = document.getElementById('testimonial-next');
+  if (previousTestimonial) previousTestimonial.addEventListener('click', () => showTestimonial(testimonialIndex - 1));
+  if (nextTestimonial) nextTestimonial.addEventListener('click', () => showTestimonial(testimonialIndex + 1));
+
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
