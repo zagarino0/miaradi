@@ -144,3 +144,15 @@
   .reference-footer .footer-bottom{align-items:flex-start;flex-direction:column;gap:10px}
   .reference-footer .footer-bottom span:last-child{display:none}
 }
+
+
+/* Hero slideshow: three distinct Madagascar travel images requested by the owner. */
+.hero-bg-one {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rP6N4Np2xHKLBkR8HpqgezJ2EzBzWpJ8DYfIEt2CtR_Hj2OVyx2azVhi&s=10");
+}
+.hero-bg-two {
+  background-image: url("https://i.pinimg.com/1200x/53/9d/ae/539dae8e523c2ca5fb8d807de6aece96.jpg");
+}
+.hero-bg-three {
+  background-image: url("https://i.pinimg.com/1200x/90/c3/48/90c348c4935b984f3d872ad880b4065c.jpg");
+}
