@@ -703,14 +703,14 @@ textarea {
   position: absolute;
   inset: 0;
   background: url('https://i.pinimg.com/736x/0c/5e/7d/0c5e7d36c5c6c85b2bdcff7ed44d9216.jpg') center 52%/cover;
-  opacity: .62
+  opacity: .9
 }
 
 .cta-banner:after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, #111110 0%, rgba(17, 17, 16, .9) 40%, rgba(17, 17, 16, .1) 100%)
+  background: linear-gradient(90deg, rgba(17, 17, 16, .82) 0%, rgba(17, 17, 16, .55) 42%, rgba(17, 17, 16, .08) 100%)
 }
 
 .cta-content {
