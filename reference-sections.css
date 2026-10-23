@@ -156,3 +156,33 @@
 .hero-bg-three {
   background-image: url("https://i.pinimg.com/1200x/90/c3/48/90c348c4935b984f3d872ad880b4065c.jpg");
 }
+
+
+/* Philosophie MIARADI et réseau local — transfert depuis la maquette client */
+.tourism-vision { background: var(--paper); color: var(--ink); padding: clamp(64px, 8vw, 110px) 7.5%; }
+.tourism-vision-inner, .local-network-layout { max-width: 1240px; margin-inline: auto; }
+.tourism-vision-heading { display:grid; grid-template-columns:minmax(0,1fr) minmax(280px,.8fr); align-items:end; gap:24px 64px; margin-bottom:clamp(32px,5vw,58px); }
+.tourism-vision-heading .eyebrow { grid-column:1/-1; margin-bottom:0; }
+.tourism-vision-heading h2, .local-network-layout h2 { margin:0; font:500 clamp(38px,5vw,72px)/1.05 var(--display); letter-spacing:-.025em; }
+.tourism-vision-heading h2 em, .local-network-layout h2 em { color:var(--yellow); font-style:normal; }
+.tourism-vision-heading > p:last-child { max-width:540px; margin:0; line-height:1.9; color:#554844; }
+.tourism-vision-pillars { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; margin-bottom:42px; }
+.tourism-pillar { padding-top:18px; border-top:1px solid rgba(23,19,18,.22); }
+.tourism-pillar-number { color:var(--yellow); font-size:11px; letter-spacing:.12em; }
+.tourism-pillar h3 { margin:22px 0 10px; font-size:16px; }
+.tourism-pillar p { margin:0; color:#554844; line-height:1.8; }
+.tourism-vision-image { margin:0; }
+.tourism-vision-image img { display:block; width:100%; max-height:540px; aspect-ratio:2/1; object-fit:cover; object-position:center 55%; }
+.tourism-vision-image figcaption { margin-top:10px; color:#665b56; font-size:11px; }
+.local-network-proof { padding:clamp(64px,8vw,110px) 7.5%; background:var(--white); color:var(--ink); }
+.local-network-layout { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:clamp(34px,7vw,100px); align-items:start; }
+.local-network-layout h2 { max-width:570px; }
+.local-network-layout > div:last-child p { margin-top:0; line-height:1.9; color:#554844; }
+.local-network-layout .local-network-emphasis { padding-left:20px; border-left:3px solid var(--yellow); color:var(--ink); font-size:16px; font-weight:700; }
+@media(max-width:760px) {
+ .tourism-vision-heading,.local-network-layout { grid-template-columns:1fr; }
+ .tourism-vision-heading .eyebrow { grid-column:auto; }
+ .tourism-vision-pillars { grid-template-columns:1fr; gap:24px; }
+ .tourism-pillar h3 { margin-top:14px; }
+ .tourism-vision-image img { aspect-ratio:4/3; }
+}
